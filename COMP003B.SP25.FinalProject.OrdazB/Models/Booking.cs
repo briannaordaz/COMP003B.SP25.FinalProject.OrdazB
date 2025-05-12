@@ -1,3 +1,5 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace COMP003B.SP25.FinalProject.OrdazB.Models;
 
 public class Booking
@@ -8,9 +10,15 @@ public class Booking
     
     public int propertyId { get; set; }
     
-    public DateTime BookingDates { get; set; }
+    [Required]
+    public DateTime CheckIn { get; set; }
     
+    [Required]
+    public DateTime CheckOut { get; set; }
+    
+    [Required]
     public int Guests { get; set; }
+    
     
     //Nullable navigation property
     public virtual Property? Property { get; set; }

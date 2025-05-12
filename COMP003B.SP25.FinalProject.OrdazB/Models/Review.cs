@@ -1,3 +1,5 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace COMP003B.SP25.FinalProject.OrdazB.Models;
 
 public class Review
@@ -6,10 +8,13 @@ public class Review
     
     public int UserId { get; set; }
     
+    [Required]
     public int PropertyId { get; set; }
     
+    [Required]
     public DateTime ReviewDates { get; set; }
     
+    [Required]
     public string Comment { get; set; }
     
     //Nullable navigation property
