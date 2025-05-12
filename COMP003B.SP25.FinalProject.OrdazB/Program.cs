@@ -1,5 +1,7 @@
+using COMP003B.SP25.FinalProject.OrdazB.Data;
 namespace COMP003B.SP25.FinalProject.OrdazB;
-
+using COMP003B.SP25.FinalProject.OrdazB.Models;
+using Microsoft.EntityFrameworkCore;
 public class Program
 {
     public static void Main(string[] args)
@@ -8,6 +10,10 @@ public class Program
 
         // Add services to the container.
         builder.Services.AddControllersWithViews();
+        
+        //Set up the databse context
+        builder.Services.AddDbContext<WebDevAcademyContext>(options =>
+            options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
 
         var app = builder.Build();
 
