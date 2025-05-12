@@ -11,4 +11,9 @@ public class Booking
     public DateTime BookingDates { get; set; }
     
     public int Guests { get; set; }
+    
+    //Nullable navigation property
+    public virtual Property? Property { get; set; }
+    public virtual User? User { get; set; }
+    public virtual Payment? Payment { get; set; }
 }

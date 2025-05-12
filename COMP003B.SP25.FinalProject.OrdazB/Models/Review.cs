@@ -11,4 +11,8 @@ public class Review
     public DateTime ReviewDates { get; set; }
     
     public string Comment { get; set; }
+    
+    //Nullable navigation property
+    public virtual User? User { get; set; }
+    public virtual Property? Property { get; set; }
 }

@@ -17,4 +17,8 @@ public class Payment
     
     [Required]
     public int PaymentAmount { get; set; }
+    
+    //Nullable navigation property
+    public virtual User? User { get; set; }
+    public virtual Booking? Booking { get; set; }
 }

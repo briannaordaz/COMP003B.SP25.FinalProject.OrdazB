@@ -18,4 +18,9 @@ public class User
     
     [Phone]
     public int Phone { get; set; }
+    
+    //Collection navigation property
+    public virtual ICollection<Booking> Bookings { get; set; }
+    public virtual ICollection<Payment> Payments { get; set; }
+    public virtual ICollection<Review> Reviews { get; set; }
 }
