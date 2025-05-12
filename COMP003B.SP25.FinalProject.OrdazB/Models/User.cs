@@ -4,7 +4,7 @@ namespace COMP003B.SP25.FinalProject.OrdazB.Models;
 
 public class User
 {
-    public int Id { get; set; }
+    public int UserId { get; set; }
     
     [Required]
     public string FirstName { get; set; }

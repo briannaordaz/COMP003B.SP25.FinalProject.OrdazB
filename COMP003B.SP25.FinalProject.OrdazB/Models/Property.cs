@@ -11,9 +11,9 @@ public class Property
     
     public string PropertyDescription { get; set; }
     
+    [Required]
     public string PropertyLocation { get; set; }
     
-    public string PropertyAddress { get; set; }
-    
+    [Required]
     public int Price { get; set; }
 }
