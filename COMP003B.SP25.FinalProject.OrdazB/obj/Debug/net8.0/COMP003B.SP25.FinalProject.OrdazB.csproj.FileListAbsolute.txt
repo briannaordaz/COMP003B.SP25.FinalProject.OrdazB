@@ -259,3 +259,4 @@
 /Users/brianna/RiderProjects/COMP003B.SP25.FinalProject.OrdazB/COMP003B.SP25.FinalProject.OrdazB/bin/Debug/net8.0/runtimes/win/lib/net7.0/System.Drawing.Common.dll
 /Users/brianna/RiderProjects/COMP003B.SP25.FinalProject.OrdazB/COMP003B.SP25.FinalProject.OrdazB/bin/Debug/net8.0/runtimes/win/lib/net7.0/System.Security.Cryptography.ProtectedData.dll
 /Users/brianna/RiderProjects/COMP003B.SP25.FinalProject.OrdazB/COMP003B.SP25.FinalProject.OrdazB/bin/Debug/net8.0/runtimes/win/lib/net7.0/System.Windows.Extensions.dll
+/Users/brianna/RiderProjects/COMP003B.SP25.FinalProject.OrdazB/COMP003B.SP25.FinalProject.OrdazB/bin/Debug/net8.0/secrets.json
