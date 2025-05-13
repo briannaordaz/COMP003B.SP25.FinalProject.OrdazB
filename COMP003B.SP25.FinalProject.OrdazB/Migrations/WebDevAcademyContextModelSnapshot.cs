@@ -126,7 +126,7 @@ namespace COMP003B.SP25.FinalProject.OrdazB.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("ReviewsController");
+                    b.ToTable("Reviews");
                 });
 
             modelBuilder.Entity("COMP003B.SP25.FinalProject.OrdazB.Models.User", b =>
@@ -134,9 +134,6 @@ namespace COMP003B.SP25.FinalProject.OrdazB.Migrations
                     b.Property<int>("UserId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
-
-                    b.Property<DateTime>("BirthDate")
-                        .HasColumnType("TEXT");
 
                     b.Property<string>("Email")
                         .IsRequired()
@@ -150,8 +147,9 @@ namespace COMP003B.SP25.FinalProject.OrdazB.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<int>("Phone")
-                        .HasColumnType("INTEGER");
+                    b.Property<string>("Phone")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
 
                     b.HasKey("UserId");
 
@@ -199,13 +197,13 @@ namespace COMP003B.SP25.FinalProject.OrdazB.Migrations
             modelBuilder.Entity("COMP003B.SP25.FinalProject.OrdazB.Models.Review", b =>
                 {
                     b.HasOne("COMP003B.SP25.FinalProject.OrdazB.Models.Property", "Property")
-                        .WithMany("ReviewsController")
+                        .WithMany("Reviews")
                         .HasForeignKey("PropertyId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("COMP003B.SP25.FinalProject.OrdazB.Models.User", "User")
-                        .WithMany("ReviewsController")
+                        .WithMany("Reviews")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -224,7 +222,7 @@ namespace COMP003B.SP25.FinalProject.OrdazB.Migrations
                 {
                     b.Navigation("Bookings");
 
-                    b.Navigation("ReviewsController");
+                    b.Navigation("Reviews");
                 });
 
             modelBuilder.Entity("COMP003B.SP25.FinalProject.OrdazB.Models.User", b =>
@@ -233,7 +231,7 @@ namespace COMP003B.SP25.FinalProject.OrdazB.Migrations
 
                     b.Navigation("Payments");
 
-                    b.Navigation("ReviewsController");
+                    b.Navigation("Reviews");
                 });
 #pragma warning restore 612, 618
         }

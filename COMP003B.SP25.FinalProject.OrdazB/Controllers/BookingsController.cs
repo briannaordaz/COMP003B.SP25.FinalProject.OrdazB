@@ -27,6 +27,7 @@ namespace COMP003B.SP25.FinalProject.OrdazB.Controllers
         }
 
         // GET: Bookings/Details/5
+        [Route("Booking/Details/{id:int}")]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
