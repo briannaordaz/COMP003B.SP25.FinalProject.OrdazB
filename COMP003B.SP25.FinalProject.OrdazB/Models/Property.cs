@@ -14,7 +14,7 @@ public class Property
     [Required]
     public string PropertyLocation { get; set; }
     
-    [Required]
+    [Required] 
     public int Price { get; set; }
     
     //Collection navigation property

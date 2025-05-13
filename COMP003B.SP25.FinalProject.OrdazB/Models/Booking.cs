@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace COMP003B.SP25.FinalProject.OrdazB.Models;
 
@@ -6,8 +7,10 @@ public class Booking
 {
     public int BookingId { get; set; }
     
+    [ForeignKey("UserId")]
     public int UserId { get; set; }
     
+    [ForeignKey("PropertyId")]
     public int propertyId { get; set; }
     
     [Required]

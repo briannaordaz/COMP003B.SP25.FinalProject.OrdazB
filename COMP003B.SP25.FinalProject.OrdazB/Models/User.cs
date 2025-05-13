@@ -1,9 +1,11 @@
 using System.ComponentModel.DataAnnotations;
+using Microsoft.EntityFrameworkCore;
 
 namespace COMP003B.SP25.FinalProject.OrdazB.Models;
 
 public class User
 {
+   
     public int UserId { get; set; }
     
     [Required]
@@ -17,10 +19,9 @@ public class User
     public string Email { get; set; }
     
     [Phone]
-    public int Phone { get; set; }
+    public string Phone { get; set; }
     
-    //Added New Property
-    public DateTime BirthDate { get; set; }
+    
     
     //Collection navigation property
     public virtual ICollection<Booking> Bookings { get; set; }

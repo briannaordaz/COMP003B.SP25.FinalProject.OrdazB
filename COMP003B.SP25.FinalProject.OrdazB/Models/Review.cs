@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace COMP003B.SP25.FinalProject.OrdazB.Models;
 
@@ -6,8 +7,10 @@ public class Review
 {
     public int ReviewId { get; set; }
     
+    [ForeignKey("UserId")]
     public int UserId { get; set; }
     
+    [ForeignKey("PropertyId")]
     [Required]
     public int PropertyId { get; set; }
     
