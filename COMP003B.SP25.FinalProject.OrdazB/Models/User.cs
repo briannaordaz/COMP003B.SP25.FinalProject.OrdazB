@@ -19,6 +19,9 @@ public class User
     [Phone]
     public int Phone { get; set; }
     
+    //Added New Property
+    public DateTime BirthDate { get; set; }
+    
     //Collection navigation property
     public virtual ICollection<Booking> Bookings { get; set; }
     public virtual ICollection<Payment> Payments { get; set; }

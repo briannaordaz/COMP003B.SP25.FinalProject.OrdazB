@@ -8,10 +8,12 @@ public class Program
     {
         var builder = WebApplication.CreateBuilder(args);
 
+        builder.Configuration.AddUserSecrets<Program>();
+        
         // Add services to the container.
         builder.Services.AddControllersWithViews();
         
-        //Set up the databse context
+        //Set up the database context
         builder.Services.AddDbContext<WebDevAcademyContext>(options =>
             options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
 
