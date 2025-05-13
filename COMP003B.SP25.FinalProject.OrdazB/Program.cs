@@ -1,3 +1,7 @@
+//Author: Brianna Ordaz
+//Course: COMP-003B: ASP.NET Core
+//Instructor: Jonathan Cruz
+//Purpose: Final Project Synthesizing MVC, Web API, EF Core, and Middleware
 using COMP003B.SP25.FinalProject.OrdazB.Data;
 namespace COMP003B.SP25.FinalProject.OrdazB;
 using COMP003B.SP25.FinalProject.OrdazB.Models;
