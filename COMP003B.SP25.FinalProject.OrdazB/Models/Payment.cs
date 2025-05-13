@@ -8,10 +8,8 @@ public class Payment
     [Required]
     public int PaymentId { get; set; }
     
-    [ForeignKey("UserId")]
     public int UserId { get; set; }
     
-    [ForeignKey("BookingId")]
     [Required]
     public int BookingId { get; set; }
     

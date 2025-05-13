@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/COMP003B.SP25.FinalProject.OrdazB.props" />
+</Project>

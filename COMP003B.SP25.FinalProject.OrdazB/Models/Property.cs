@@ -18,6 +18,6 @@ public class Property
     public int Price { get; set; }
     
     //Collection navigation property
-    public virtual ICollection<Review> Reviews { get; set; }
-    public virtual ICollection<Booking> Bookings { get; set; }
+    public virtual ICollection<Review>? Reviews { get; set; }
+    public virtual ICollection<Booking>? Bookings { get; set; }
 }

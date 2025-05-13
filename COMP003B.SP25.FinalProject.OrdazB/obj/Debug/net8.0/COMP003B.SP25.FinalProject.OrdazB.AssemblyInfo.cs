@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("COMP003B.SP25.FinalProject.OrdazB")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d584ceba84f08cab51719447ac09b9dace524218")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8258220638331902668a688d2e995f62c92edced")]
 [assembly: System.Reflection.AssemblyProductAttribute("COMP003B.SP25.FinalProject.OrdazB")]
 [assembly: System.Reflection.AssemblyTitleAttribute("COMP003B.SP25.FinalProject.OrdazB")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

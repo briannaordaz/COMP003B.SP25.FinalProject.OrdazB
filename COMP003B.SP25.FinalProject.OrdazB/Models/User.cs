@@ -24,7 +24,7 @@ public class User
     
     
     //Collection navigation property
-    public virtual ICollection<Booking> Bookings { get; set; }
-    public virtual ICollection<Payment> Payments { get; set; }
-    public virtual ICollection<Review> Reviews { get; set; }
+    public virtual ICollection<Booking>? Bookings { get; set; }
+    public virtual ICollection<Payment>? Payments { get; set; }
+    public virtual ICollection<Review>? Reviews { get; set; }
 }
